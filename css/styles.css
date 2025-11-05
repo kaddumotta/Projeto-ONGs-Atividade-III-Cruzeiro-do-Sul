@@ -1,12 +1,6 @@
-/* =========================================================
-   🌿 ONG Vida em Rede - Design System e Estilos Globais
-   ========================================================= */
 
-/* ------------------------------
-   🎨 1. Variáveis do Design System
-   ------------------------------ */
 :root {
-  /* Paleta de Cores */
+  
   --color-primary: #2E7D32;
   --color-primary-light: #4CAF50;
   --color-primary-dark: #1B5E20;
@@ -26,18 +20,18 @@
   --color-info: #1976D2;
   --color-warning: #FFA000;
 
-  /* Tipografia */
+ 
   --font-primary: "Poppins", Arial, sans-serif;
   --font-secondary: "Open Sans", sans-serif;
 
-  /* Tamanhos de Fonte */
+ 
   --fs-xl: 2.5rem;
   --fs-lg: 1.8rem;
   --fs-md: 1.2rem;
   --fs-sm: 1rem;
   --fs-xs: 0.875rem;
 
-  /* Espaçamentos (8px scale) */
+  
   --space-1: 8px;
   --space-2: 16px;
   --space-3: 24px;
@@ -45,13 +39,10 @@
   --space-5: 48px;
   --space-6: 64px;
 
-  /* Layout Grid */
+ 
   --max-width: 1200px;
 }
 
-/* ------------------------------
-   🌍 2. Estilos Globais
-   ------------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -68,9 +59,6 @@ body {
   min-height: 100vh;
 }
 
-/* ------------------------------
-   🧭 3. Cabeçalho e Navegação
-   ------------------------------ */
 header {
   background-color: var(--color-primary);
   color: var(--color-neutral-100);
@@ -84,7 +72,7 @@ header h1 {
   margin-bottom: var(--space-2);
 }
 
-/* Menu principal */
+
 nav ul {
   list-style: none;
   display: flex;
@@ -108,7 +96,7 @@ nav a.ativo {
   color: var(--color-neutral-900);
 }
 
-/* Submenu Dropdown (CSS-only, preparado) */
+
 nav li {
   position: relative;
 }
@@ -139,9 +127,7 @@ nav li ul li a:hover {
   color: var(--color-neutral-900);
 }
 
-/* ------------------------------
-   🍔 4. Menu Hambúrguer (CSS Only)
-   ------------------------------ */
+
 .menu-toggle {
   display: none;
   position: absolute;
@@ -171,9 +157,7 @@ nav li ul li a:hover {
   align-items: center;
 }
 
-/* ------------------------------
-   🧱 5. Layout Principal (Grid)
-   ------------------------------ */
+
 main, section {
   width: 90%;
   max-width: var(--max-width);
@@ -184,16 +168,14 @@ main, section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Sistema de Grid Customizado (12 colunas) */
+
 .grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--space-3);
 }
 
-/* ------------------------------
-   🧩 6. Tipografia e Conteúdo
-   ------------------------------ */
+
 h1, h2, h3 {
   font-family: var(--font-secondary);
   color: var(--color-primary-dark);
@@ -209,9 +191,7 @@ p, li {
   margin-bottom: var(--space-2);
 }
 
-/* ------------------------------
-   📦 7. Cards e Projetos
-   ------------------------------ */
+
 article, ol ul {
   background: var(--color-neutral-200);
   padding: var(--space-3);
@@ -225,9 +205,7 @@ article:hover {
   transition: 0.3s;
 }
 
-/* ------------------------------
-   📋 8. Formulários
-   ------------------------------ */
+
 form {
   display: grid;
   gap: var(--space-2);
@@ -293,9 +271,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* ------------------------------
-   ⚠️ 9. Feedback Visual (Alerts / Toasts / Modals)
-   ------------------------------ */
+
 .alert {
   padding: var(--space-2);
   border-radius: 6px;
@@ -309,7 +285,7 @@ button:disabled {
 .alert.info { background: var(--color-info); color: white; }
 .alert.warning { background: var(--color-warning); color: black; }
 
-/* Toast (notificação flutuante) */
+
 .toast {
   position: fixed;
   bottom: var(--space-4);
@@ -328,7 +304,7 @@ button:disabled {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Modal (janela central) */
+
 .modal {
   position: fixed;
   top: 0;
@@ -363,9 +339,7 @@ button:disabled {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ------------------------------
-   🏷️ 10. Tags e Badges
-   ------------------------------ */
+
 .badge {
   display: inline-block;
   background-color: var(--color-secondary);
@@ -377,9 +351,7 @@ button:disabled {
   margin-right: var(--space-1);
 }
 
-/* ------------------------------
-   📱 11. Responsividade (Grid 12 colunas + breakpoints)
-   ------------------------------ */
+
 @media (max-width: 1200px) {
   main, section { width: 95%; }
 }
@@ -404,9 +376,7 @@ button:disabled {
   h2 { font-size: 1.2rem; }
 }
 
-/* ------------------------------
-   🦶 12. Rodapé
-   ------------------------------ */
+
 footer {
   background-color: var(--color-primary-dark);
   color: var(--color-neutral-100);
